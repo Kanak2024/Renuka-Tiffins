@@ -1,6 +1,6 @@
-
+const BackendUrl =  import.meta.env.BACKEND_URL
 export const api = axios.create({
-  baseURL: "http://localhost:8000/api",
+  baseURL: BackendUrl || "http://localhost:8000/api" ,
 });
 
 export const getAllFood = async () => {
