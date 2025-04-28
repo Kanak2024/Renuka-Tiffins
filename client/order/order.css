@@ -1,0 +1,27 @@
+
+
+/* Responsive Styles */
+
+
+.loading{
+      width: 100%;
+      height: 100%;
+      display:none;
+      justify-content: center;
+      align-items: center;
+      background: transparent;
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      position:fixed;
+    }
+    .loading>h2{
+      font-size: 2rem;
+      color:var(--primary-color);
+    }
+
+    body{
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }

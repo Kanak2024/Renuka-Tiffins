@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Renuka Tiffins</title>
+    <link rel="stylesheet" href="../menu.css"> 
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="../header-footer.css"><!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="loading"><h2>Loading...</h2></div>
+    <!-- Include Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="../index.html" class="logo">Renuka Tiffins</a>
+                <div class="menu-toggle" id="menu-toggle">☰</div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../order/order.html">Order</a></li>
+                    <li><a href="../fullmenu/menu.html" class="active">Cart</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                    <li>
+                        <div class="user-menu-container">
+                            <div ><img src="../images/user.png" class="user-icon"></div>
+                            <div class="dropdown-menu">
+                              <a href="../cart/menu.html">Cart</a>
+                              <a href="../whishlist/wishlist.html">Wishlist</a>
+                              <a class="logout">Logout</a>
+                            </div>
+                          </div>
+                        <a href="../signup/signup.html" class="hidden">Sign Up</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Order Section -->
+    <section class="order-section">
+        <div class="container">
+            <h2 class="section-title">Your Food</h2>
+            <!-- Add your order form or menu items here -->
+            <div class="menu-container" id="menu-fetch">
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <a onclick="buyNow()" class="btn">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Renuka Tiffins</h3>
+                    <p>Bringing the authentic taste of homemade food to your doorstep since 2015.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../order/order.html">Order</a></li>
+                        <li><a href="../whishlist/wishlist.html">whishlist</a></li>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li>Near Shiv Mandir, Vinobha Nagar, Betul</li>
+                        <li>Phone: +91 8602727573</li>
+                        <li>Email: info@renukatiffins.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <ul class="social-links">
+                        <li><a href="#" class="flex-col"><img src="../images/icons8-facebook-48.png" width="30"><p>Facebook</p></a></li>
+                        <li><a href="#" class="flex-col"><img src="../images/icons8-instagram-48.png" width="30"> <p>Instagram</p></a></li>
+                        <li><a href="#" class="flex-col"><img src="../images/icons8-twitter-50.png" width="30"> <p>Twitter</p></a></li>
+                        <li><a href="#" class="flex-col"><img src="../images/icons8-youtube-48.png" width="30"> <p>YouTube</p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Renuka Tiffins. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.8.4/axios.min.js" integrity="sha512-2A1+/TAny5loNGk3RBbk11FwoKXYOMfAK6R7r4CpQH7Luz4pezqEGcfphoNzB7SM4dixUoJsKkBsB6kg+dNE2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="./cart.js"></script>
+</body>
+</html>

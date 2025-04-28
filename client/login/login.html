@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Renuka Tiffins</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../header-footer.css">
+</head>
+<body>
+    <div class="loading"><h2>login please wait...</h2></div>
+
+    <!-- Include Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="../index.html" class="logo">Renuka Tiffins</a>
+                <div class="menu-toggle" id="menu-toggle">☰</div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../order/order.html">Order</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                    <li><a href="../login/login.html" class="active">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Login Section -->
+    <section class="auth-section">
+        <div class="auth-container">
+            <h2>Login</h2>
+            <form class="auth-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required autocomplete="off">
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+            <div class="auth-options">
+                <p>Don't have an account? <a href="../signup/signup.html">Sign Up</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Renuka Tiffins</h3>
+                    <p>Bringing the authentic taste of homemade food to your doorstep since 2015.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../order/order.html">Order</a></li>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                        <li><a href="../signup/signup.html">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li>Near Shiv Mandir, Vinobha Nagar, Betul</li>
+                        <li>Phone: +91 8602727573</li>
+                        <li>Email: info@renukatiffins.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <ul class="social-links">
+                        <li><a href="#" class="flex-col"><img src="../images/icons8-facebook-48.png" width="30"><p>Facebook</p></a></li>
+                        <li><a href="#" class="flex-col"><img src="../images/icons8-instagram-48.png" width="30"> <p>Instagram</p></a></li>
+                        <li><a href="#" class="flex-col"><img src="../images/icons8-twitter-50.png" width="30"> <p>Twitter</p></a></li>
+                        <li><a href="#" class="flex-col"><img src="../images/icons8-youtube-48.png" width="30"> <p>YouTube</p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Renuka Tiffins. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.8.4/axios.min.js" integrity="sha512-2A1+/TAny5loNGk3RBbk11FwoKXYOMfAK6R7r4CpQH7Luz4pezqEGcfphoNzB7SM4dixUoJsKkBsB6kg+dNE2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="./login.js"></script>
+</body>
+</html>
